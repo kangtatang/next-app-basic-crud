@@ -20,7 +20,7 @@ access the dashboard page:
 
 the main page is empty :D
 
-## Libarary
+## Library
 
 - Axios
 - Formik
