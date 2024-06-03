@@ -3,7 +3,7 @@ import Navbar from "../../components/Navbar";
 import Sidebar from "../../components/Sidebar";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
-import theme from "../theme";
+import CustomTheme from "../CustomTheme";
 import Head from "next/head";
 import GridTable from "@/components/GridTable";
 import ProggressChart from "@/components/ProggressChart";
@@ -49,7 +49,7 @@ const Dashboard = () => {
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
       </Head>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={CustomTheme}>
         <Box
           sx={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
         >
@@ -68,7 +68,7 @@ const Dashboard = () => {
                 <Grid container>
                   <Grid item xs={12} md={12}>
                     <GridTable data={dataStaff} fetchData={fetchData} />
-                  </Grid>                 
+                  </Grid>
                 </Grid>
               </Container>
             </Box>
